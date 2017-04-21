@@ -49,7 +49,7 @@
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Home</a></li>
+              <li><a href="MainPage.html">Home</a></li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Nossos Projetos <span class="caret"></span></a>
                 <ul class="dropdown-menu">
@@ -63,7 +63,7 @@
                 </ul>
               </li>
               <li><a href="blog.php">Blog</a></li>
-              <li><a href="about.php">Sobre Nós</a></li>
+              <li class="active"><a href="about.php">Sobre Nós</a></li>
               <li><a href="contact.php">Contato</a></li>
               <li><a href="press.php">Imprensa</a></li>
             </ul>
@@ -74,11 +74,9 @@
 
       <!-- Main component for a primary marketing message or call to action -->
       <div class="jumbotron">
-        <h1>Bem-Vindo a Gato Mágico Entretenimento</h1>
-        <p>Somos uma empresa 100% brasileira que desenvolve e publica jogos eletronicos para celulares e computadores. </p>
-        <p>
-          <a class="btn btn-lg btn-primary" href="projetos.html" role="button">Ver nossos projetos &raquo;</a>
-        </p>
+        <h2>Sobre a Gato Mágico</h2>
+        <p>Somos uma empresa foda ;) </p>
+        
       </div>
 
     </div> <!-- /container -->

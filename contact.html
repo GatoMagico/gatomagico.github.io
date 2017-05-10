@@ -91,31 +91,65 @@ $(document).ready(function()
     </ul>
     <br style="clear: left" />
   </div>
-  <!-- End Menu --> 
+  <!-- End Menu -->  
   
   <!-- Begin Container -->
   <div id="container" class="opacity">
-    <div class="full-width">
-      <div class="one-third"><img src="images/our-team.jpg" alt="" /></div>
-      <div class="two-third last">
-        <h2>Sobre nós</h2>
-        <p>Fundada em 2017, </p>
-        <br />
-        <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Curabitur blandit tempus porttitor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nulla vitae elit libero, a pharetra augue. Nullam quis risus eget urna mollis ornare vel eu leo. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-        <br />
-        <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cras mattis consectetur purus sit amet fermentum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis risus eget urna mollis ornare vel eu leo. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
-        <br />
-        <br />
-        <h4>Fermentum Purus Ipsum</h4>
-        <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Maecenas sed diam eget risus varius blandit sit amet non magna. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna, vel scelerisque nisl.</p>
-        <br />
-        <p>Aenean lacinia bibendum nulla sed consectetur. Vestibulum id ligula porta felis euismod semper. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+    <div class="content">
+      <h2>Contact Us</h2>
+      <p>Cras vehicula, enim ac rutrum imperdiet, tellus nibh sodales magna, at mollis odio mi a urna. Aliquam augue augue, sodales eu condimentum a, scelerisque eget purus. Sed suscipit mattis.</p>
+      <br />
+      <br />
+      <br />
+      <div class="form-container">
+        <form class="forms" action="contact/form-handler.php" method="post">
+          <fieldset>
+            <ol>
+              <li class="form-row text-input-row">
+                <label>Name*</label>
+                <input type="text" name="name" value="" class="text-input required" title="" />
+              </li>
+              <li class="form-row text-input-row">
+                <label>Email*</label>
+                <input type="text" name="email" value="" class="text-input required email" title="" />
+              </li>
+              <li class="form-row text-area-row">
+                <label>Message*</label>
+                <textarea name="message" class="text-area required"></textarea>
+              </li>
+              <li class="form-row hidden-row">
+                <input type="hidden" name="hidden" value="" />
+              </li>
+              <li class="button-row">
+                <input type="submit" value="Submit" name="submit" class="btn-submit" />
+              </li>
+            </ol>
+            <input type="hidden" name="v_error" id="v-error" value="Required" />
+            <input type="hidden" name="v_email" id="v-email" value="Enter a valid email" />
+          </fieldset>
+        </form>
+        <div class="response"></div>
       </div>
-      <div class="clear"></div>
+      <br />
     </div>
-    <!-- End Full Width -->
-    
+    <div class="sidebar">
+      <div class="sidebar-box">
+        <h4>Address</h4>
+        <p>Lorem Ipsum Dolor Sit
+          Moon Avenue No:11/21
+          Planet City, Earth<br>
+          <br>
+          <span class="lite1">Fax:</span> +555 797 534 01<br>
+          <span class="lite1">Tel:</span> +555 636 646 62<br>
+          <span class="lite1">E-mail:</span> name@domain.com</p>
+      </div>
+      <div class="sidebar-box">
+        <h4>Where are We?</h4>
+        <iframe width="265" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/?ie=UTF8&amp;ll=40.959289,29.082184&amp;spn=0.012963,0.022659&amp;z=14&amp;output=embed"></iframe>
+      </div>
+    </div>
     <div class="clear"></div>
+      
     <div id="footer">
       <div class="footer-top"></div>
       <!-- Divider -->

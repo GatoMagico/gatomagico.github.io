@@ -1,61 +1,190 @@
-<!DOCTYPE html>
-
-<html>
-
+<!DOCTYPE HTML>
+<html lang="pt-BR">
 <head>
+<meta charset="UTF-8">
+<title>Magikat Entertainment - Home</title>
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon-icon.png" />
+<link rel="stylesheet" type="text/css" href="style.css" media="all" />
+<link rel="stylesheet" type="text/css" href="style/color/blue.css" media="all" />
+<link rel="stylesheet" type="text/css" media="screen" href="style/css/prettyPhoto.css"  />
+<link rel="stylesheet" type="text/css" href="style/type/museo.css" media="all" />
+<link rel="stylesheet" type="text/css" href="style/type/ptsans.css" media="all" />
+<link rel="stylesheet" type="text/css" href="style/type/charis.css" media="all" />
+<!--[if IE 7]>
+<link rel="stylesheet" type="text/css" href="style/css/ie7.css" media="all" />
+<![endif]-->
+<!--[if IE 8]>
+<link rel="stylesheet" type="text/css" href="style/css/ie8.css" media="all" />
+<![endif]-->
+<!--[if IE 9]>
+<link rel="stylesheet" type="text/css" href="style/css/ie9.css" media="all" />
+<![endif]-->
+<script type="text/javascript" src="style/js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="style/js/ddsmoothmenu.js"></script>
+<script type="text/javascript" src="style/js/transify.js"></script>
+<script type="text/javascript" src="style/js/jquery.aw-showcase.js"></script>
+<script type="text/javascript" src="style/js/jquery.jcarousel.js"></script>
+<script type="text/javascript" src="style/js/carousel.js"></script>
+<script type="text/javascript" src="style/js/jquery.prettyPhoto.js"></script>
+<script type="text/javascript" src="style/js/jquery.superbgimage.min.js"></script>
+<script type="text/javascript" src="style/js/jquery.slickforms.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function($){
+	$('.forms').dcSlickForms();
+});
+</script>
+<script type="text/javascript">
 
-	<title>Gato M�gico Entretenimento</title>
-	<meta charset="ISO-8859-1" />
-   	<meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1" />
-    	<style type="text/css">
-    		body {
-        	background-color: #f0f0f2;
-        	margin: 0;
-        	padding: 0;
-        	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-       		}
-    		
-		div {
-        	width: 600px;
-	        margin: 5em auto;
-	        padding: 50px;
-        	background-color: #fff;
-	        border-radius: 1em;
-    		}
-		
-		a:link, a:visited {
-	        color: #38488f;
-	        text-decoration: none;
-    		}
+$(document).ready(function()
+{
+	$("#showcase").awShowcase(
+	{
+		content_width:			900,
+		content_height:			400,
+		auto:					true,
+		interval:				3000,
+		continuous:				false,
+		arrows:					true,
+		buttons:				true,
+		btn_numbers:			true,
+		keybord_keys:			true,
+		mousetrace:				false, /* Trace x and y coordinates for the mouse */
+		pauseonover:			true,
+		stoponclick:			false,
+		transition:				'fade', /* hslide/vslide/fade */
+		transition_delay:		0,
+		transition_speed:		500,
+		show_caption:			'onload' /* onload/onhover/show */
+	});
+});
 
-		@media (max-width: 700px) {
-		        body {
-         		background-color: #fff;
-        		}
-        		div {
-            		width: auto;
-            		margin: 0 auto;
-            		border-radius: 0;
-            		padding: 1em;
-        		}
-    		}
-    	</style>    
+</script>
 
 </head>
-
 <body>
+<!-- Begin Wrapper -->
+<div id="wrapper">
+  <div id="header">
+    <div class="logo opacity"><a href="index.html"><img src="images/logo-site.png" alt="" /></a></div>
+    <div class="social">
+      <ul>
+        <li><a href="https://www.facebook.com/MagikatEntertain/"><img src="style/images/icon-facebook.png" alt="Facebook" /></a></li>
+        <li><a href="https://twitter.com/magikatstudio"><img src="style/images/icon-twitter.png" alt="Twitter" /></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="clear"></div>
+  <!-- Begin Menu -->
+  <div id="menu" class="menu opacity">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="ourgames.html">Jogos</a>
+        <ul>
+        	<li><a href="portfolio.html">Nossos Jogos</a></li>
+            <li><a href="ourgames.html">Jogos Públicados</a></li>
+        </ul>
+      </li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="about.html">Sobre Nós</a></li>
+      <li><a href="contact.html">Contato</a></li>
+      <li><a href="press.html">Imprensa</a></li>
+    </ul>
+    <br style="clear: left" />
+  </div>
+  <!-- End Menu --> 
+  
+  <!-- Begin Container -->
+  <div id="container" class="opacity"> 
+    
+    <!-- Begin Showcase -->
+    <div id="showcase" class="showcase"> 
+      <!-- Each child div in #showcase represents a slide -->
+      <div class="showcase-slide"> 
+        <!-- Put the slide content in a div with the class .showcase-content. -->
+        <div class="showcase-content"> <img src="images/slide1.png" alt="1" /> </div>
+      </div>
+      
+      <!-- Each child div in #showcase represents a slide -->
+      <div class="showcase-slide"> 
+        <!-- Put the slide content in a div with the class .showcase-content. -->
+        <div class="showcase-content"> <img src="images/slide2.png" alt="2" /> </div>
+        <div class="showcase-caption">
+            <a href="#">Clique para mais informações</a>
+		</div>
+      </div>
+    </div>
+    <!-- End Showcase -->
+    
+    <div class="hr2"></div>
+    <!-- Divider --> 
+    
+    <!-- Begin Top Columns -->
+    <div class="two-third">
+      <h2>A Magikat</h2>
+      <p>Somos uma empresa brasileira especializada no desenvolvimento e publicação de jogos. Somos apaixonados por todos os tipos de jogos: mobile, para computador, para consoles, jogos de tabuleiro e também jogos de cartas! Dessa paixão, surgiu a ideia de produzir produtos nacionais e dar suporte a outros já existentes.</p>
+    </div>
+    <div class="one-third last">
+        <h2>Nossos Valores</h2>
+      <ul>
+        <li>Divertir todos os nossos clientes</li>
+        <li>Qualidade em todos os nossos produtos</li>
+        <li>Integrar todas as pessoas através de jogos</li>
+      </ul>
+    </div>
+    <!-- End Top Columns -->
+    
+    <div class="clear"></div>
+    <br />
+    <br />
+    <br />
+    
+    
+    <div id="footer">
+      <div class="footer-top"></div>
+      <!-- Divider -->
+      <div class="one-third">
+        <h3>Últimas postagens</h3>
+        <ul class="latest-posts">
+          <li><span class="date"><em class="day">22</em><em class="month">Jun</em></span> <a href="#">Vivamus soder pharetra libero atincidunt</a> </li>
+          <li><span class="date"><em class="day">14</em><em class="month">May</em></span> <a href="#">Vivamus soder pharetra libero atincidunt</a> </li>
+          <li><span class="date"><em class="day">11</em><em class="month">May</em></span> <a href="#">Vivamus soder pharetra libero atincidunt</a> </li>
+          <li><span class="date"><em class="day">08</em><em class="month">Apr</em></span> <a href="#">Vivamus soder pharetra libero atincidunt</a> </li>
+        </ul>
+      </div>
+      <div class="one-third">
+        <h3>Instagram</h3>
+        <ul class="flickr">
+          <li><a href="#"><img src="style/images/art/f1.jpg" alt="" /></a></li>
+          <li><a href="#"><img src="style/images/art/f2.jpg" alt="" /></a></li>
+          <li><a href="#"><img src="style/images/art/f3.jpg" alt="" /></a></li>
+          <li><a href="#"><img src="style/images/art/f4.jpg" alt="" /></a></li>
+          <li><a href="#"><img src="style/images/art/f5.jpg" alt="" /></a></li>
+          <li><a href="#"><img src="style/images/art/f6.jpg" alt="" /></a></li>
+          <li><a href="#"><img src="style/images/art/f7.jpg" alt="" /></a></li>
+          <li><a href="#"><img src="style/images/art/f8.jpg" alt="" /></a></li>
+          <li><a href="#"><img src="style/images/art/f9.jpg" alt="" /></a></li>
+          <li><a href="#"><img src="style/images/art/f1.jpg" alt="" /></a></li>
+          <li><a href="#"><img src="style/images/art/f2.jpg" alt="" /></a></li>
+          <li><a href="#"><img src="style/images/art/f3.jpg" alt="" /></a></li>
+        </ul>
+      </div>
+      <div class="one-third last">
+        <h3>Contato</h3>
+        <p>Fique a vontade para entrar em contato conosco através de nosso e-mail, <a href="mailto:gatomagicoentretenimento@gmail.com" style="color:#b5b5b5">gatomagicoentretenimento@gmail.com</a> ou através de nossas redes sociais:</p> <br />
+        <p><a href="https://www.facebook.com/MagikatEntertain/" style="color:#b5b5b5">facebook.com/MagikatEntertain</a></p>
+        <p><a href="https://twitter.com/magikatstudio" style="color:#b5b5b5">@magikatstudio</a></p>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <!-- End Container -->
+  
+  <div id="copyright" class="opacity">
+    <p>© 2017 Magikat Entertainement. Todos os direitos reservados.</p>
+  </div>
+</div>
+<!-- End Wrapper --> 
 
-	<div>
-
-		<h1> Bem-vindo ao nosso site!</h1>
-	
-		<p> Estamos em constru��o </p>
-
-		<a href="MainPage.html">Ir para Home</a>
-
-	</div>
-
+<script type="text/javascript" src="style/js/scripts.js"></script>
 </body>
-
 </html>
-
